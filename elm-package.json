@@ -1,5 +1,5 @@
 {
-    "version": "1.0.2",
+    "version": "2.0.0",
     "summary": "A clean convention for sending messages via ports.",
     "repository": "https://github.com/hendore/elm-port-message.git",
     "license": "BSD3",
