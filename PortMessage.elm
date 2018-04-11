@@ -16,23 +16,27 @@ import Json.Encode
 
 {-| -}
 type alias PortMessage =
-    { tag : Tag
+    { tag : String
     , payload : Json.Encode.Value
     }
 
 
-type alias Tag =
-    String
-
-
 {-| Create a new PortMessage with an empty payload.
+
+    new "SomeAction" == { tag = "SomeAction", payload = null }
+
 -}
-new : Tag -> PortMessage
+new : String -> PortMessage
 new tag =
     PortMessage tag Json.Encode.null
 
 
 {-| Attach a payload to the PortMessage
+
+    new "JoinChannel"
+        |> withPayload (Json.Encode.string "lobby")
+        == { tag = "JoinChannel", payload = "lobby" }
+
 -}
 withPayload : Json.Encode.Value -> PortMessage -> PortMessage
 withPayload payload message =
