@@ -2,6 +2,8 @@ module PortMessage exposing (PortMessage, new, withPayload)
 
 {-| Add a short description here.
 
+@docs PortMessage
+
 
 # Builder
 
@@ -12,6 +14,7 @@ module PortMessage exposing (PortMessage, new, withPayload)
 import Json.Encode
 
 
+{-| -}
 type alias PortMessage =
     { tag : Tag
     , payload : Json.Encode.Value
