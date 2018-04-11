@@ -1,6 +1,6 @@
 module PortMessage exposing (PortMessage, new, withPayload)
 
-{-| Add a short description here.
+{-| Useful functions for building a PortMessage to be delivered through ports.
 
 @docs PortMessage
 
