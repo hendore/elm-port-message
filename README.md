@@ -2,7 +2,7 @@
 
 A clean convention for sending messages via ports.
 
-> Thanks to @splodingsocks for the inspiration to not create a separate port
+> Thanks to [@splodingsocks](https://github.com/splodingsocks) for the inspiration to not create a separate port
 for each Cmd/Sub. [The Importance of Ports](https://www.youtube.com/watch?v=P3pL85n9_5s)
 
 ## Background
@@ -95,7 +95,7 @@ How you structure your ports whether you decide to have a single `Ports` module
 or split it up into different modules by feature or API is entirely your choice
 and this package will work either way. Personally I like having separate modules for each service `File.elm`, `Phoenix.elm`, `Document.elm` over a single module for everything for several reasons.
 
-1. Sharing code between projects, is easier to just copy the port module to another project and not bring along services that are not required.
+1. Sharing code between projects. It's easy to just copy a small focused port module to another project without bringing along services that are not required.
 
 2. The port modules can have other functionality that's not related to working with the port, for example the `File` module may expose `load : Filename -> Cmd a` where `Filename` is a type defined in `File.elm`, or maybe `bytesize : File -> Int` again where `File` is a record alias defined in `File.elm`.
 
@@ -108,4 +108,4 @@ and this package will work either way. Personally I like having separate modules
 
 I'm happy to receive any feedback and ideas for about additional features. Any
 input and pull requests are very welcome and encouraged. If you'd like to help
-or have ideas, get in touch with me at @hendore in the elmlang Slack!
+or have ideas, get in touch with me at @Hendore in the elmlang Slack!

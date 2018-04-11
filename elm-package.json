@@ -1,12 +1,14 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "summary": "A clean convention for sending messages via ports.",
     "repository": "https://github.com/hendore/elm-port-message.git",
     "license": "BSD3",
     "source-directories": [
         "."
     ],
-    "exposed-modules": ["PortMessage"],
+    "exposed-modules": [
+        "PortMessage"
+    ],
     "dependencies": {
         "elm-lang/core": "5.1.1 <= v < 6.0.0"
     },
