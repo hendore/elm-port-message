@@ -1,4 +1,4 @@
-module PortMessage exposing (PortMessage, new, withPayload)
+module PortMessage exposing ( PortMessage, new, withPayload)
 
 {-| Useful functions for building a PortMessage to be delivered through ports.
 
